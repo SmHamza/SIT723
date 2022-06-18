@@ -1,3 +1,4 @@
+#This repository provides with some aditional additional test runs, results and validations from the original authors
 # Deep Reinforcement Learning for Automated Stock Trading: An Ensemble Strategy
 This repository provides codes for [ICAIF 2020 paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3690996)
 
