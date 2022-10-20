@@ -1,0 +1,2788 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf2 \cb3 \CocoaLigature0 ============Start Ensemble Strategy============\
+============================================\
+turbulence_threshold:  171.0940715631016\
+======Model training from:  20090000 to  20151002\
+======A2C Training========\
+Training time (A2C):  1.7368738333384195  minutes\
+======A2C Validation from:  20151002 to  20160104\
+A2C Sharpe Ratio:  0.037168867351380745\
+\
+======PPO Training========\
+Training time (PPO):  6.111055433750153  minutes\
+======PPO Validation from:  20151002 to  20160104\
+PPO Sharpe Ratio:  0.00041587114963295805\
+======DDPG Training========\
+Training time (DDPG):  1.0811591506004334  minutes\
+======DDPG Validation from:  20151002 to  20160104\
+DDPG Sharpe Ratio:  0.07871194404899563\
+======TD3 Training========\
+Training time (TD3):  1.1750983357429505  minutes\
+======TD3 Validation from:  20151002 to  20160104\
+TD3 Sharpe Ratio:  0.07196224406768935\
+======GAIL Training========\
+actions (16990, 30)\
+obs (16990, 181)\
+rewards (16990,)\
+episode_returns (10,)\
+episode_starts (16990,)\
+actions (16990, 30)\
+obs (16990, 181)\
+rewards (16990,)\
+episode_returns (10,)\
+episode_starts (16990,)\
+Total trajectories: 10\
+Total transitions: 16990\
+Average returns: 124.22902248229366\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.008 seconds\
+computegrad\
+done in 0.220 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.41          0\
+         1       1.48     0.0906\
+         2       3.25      0.218\
+         3       1.01      0.665\
+         4      0.748       2.04\
+         5       4.74        3.3\
+         6        0.7       3.94\
+         7       1.23       7.17\
+         8       2.68        8.9\
+         9       2.12       9.48\
+        10      0.687         12\
+done in 0.392 seconds\
+Expected: 0.349 Actual: 0.102\
+violated KL constraint. shrinking step.\
+Expected: 0.349 Actual: 0.064\
+Stepsize OK!\
+vf\
+done in 0.141 seconds\
+sampling\
+done in 4.042 seconds\
+computegrad\
+done in 0.008 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       9.59          0\
+         1       15.5    0.00324\
+         2       17.9      0.181\
+         3       2.99      0.284\
+         4       4.36      0.395\
+         5       88.3      0.448\
+         6        7.8      0.494\
+         7       12.4      0.741\
+         8         26       3.55\
+         9        382       4.01\
+        10       13.3       4.24\
+done in 0.049 seconds\
+Expected: 0.313 Actual: 0.069\
+Stepsize OK!\
+vf\
+done in 0.062 seconds\
+sampling\
+done in 3.819 seconds\
+computegrad\
+done in 0.008 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       2.66          0\
+         1       41.9      0.269\
+         2       50.8       0.42\
+         3       20.5      0.479\
+         4        104       1.09\
+         5       66.2       2.65\
+         6        117       4.22\
+         7       28.1       6.01\
+         8        573       6.57\
+         9        104       8.51\
+        10       35.9       10.9\
+done in 0.051 seconds\
+Expected: 0.558 Actual: 0.051\
+Stepsize OK!\
+vf\
+done in 0.062 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.68692 |       0.83320 |       0.65934 |      -0.00066 |       0.57812 |       0.30469\
+/Users/mac/opt/anaconda3/envs/Deep-Reinforcement-Learning/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.\
+  out=out, **kwargs)\
+/Users/mac/opt/anaconda3/envs/Deep-Reinforcement-Learning/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars\
+  ret = ret.dtype.type(ret / rcount)\
+-----------------------------------------\
+| EpThisIter              | 0           |\
+| EpTrueRewMean           | nan         |\
+| EpisodesSoFar           | 0           |\
+| TimeElapsed             | 13.4        |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.488426   |\
+| explained_variance_t... | 0.0257      |\
+| meankl                  | 0.007544256 |\
+| optimgain               | 0.051438138 |\
+| reference_Q_mean        | 3.47        |\
+| reference_Q_std         | 3.43        |\
+| reference_action_mean   | -0.0295     |\
+| reference_action_std    | 0.963       |\
+| reference_actor_Q_mean  | 4.31        |\
+| reference_actor_Q_std   | 3.45        |\
+| rollout/Q_mean          | 2.3         |\
+| rollout/actions_mean    | 0.0872      |\
+| rollout/actions_std     | 0.823       |\
+| rollout/episode_steps   | 1.7e+03     |\
+| rollout/episodes        | 5           |\
+| rollout/return          | 154         |\
+| rollout/return_history  | 154         |\
+| surrgain                | 0.051438138 |\
+| total/duration          | 64          |\
+| total/episodes          | 5           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 156         |\
+| train/loss_actor        | -4.32       |\
+| train/loss_critic       | 1.6         |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.1102344830830893  minutes\
+======GAIL Validation from:  20151002 to  20160104\
+GAIL Sharpe Ratio:  -0.010043966576531773\
+======Trading from:  20160104 to  20160405\
+Used Model:  <stable_baselines.ddpg.ddpg.DDPG object at 0x1445e0dd8>\
+previous_total_asset:1000000\
+end_total_asset:1084823.2893040734\
+total_reward:84823.28930407343\
+total_cost:  1447.5530715238829\
+total trades:  939\
+Sharpe:  0.2799889626705825\
+============================================\
+turbulence_threshold:  96.08032158358223\
+======Model training from:  20090000 to  20160104\
+======A2C Training========\
+Training time (A2C):  1.8881717840830485  minutes\
+======A2C Validation from:  20160104 to  20160405\
+A2C Sharpe Ratio:  0.07551785450336844\
+======PPO Training========\
+Training time (PPO):  6.319382599989573  minutes\
+======PPO Validation from:  20160104 to  20160405\
+PPO Sharpe Ratio:  0.14647451306439255\
+======DDPG Training========\
+Training time (DDPG):  1.0832793354988097  minutes\
+======DDPG Validation from:  20160104 to  20160405\
+DDPG Sharpe Ratio:  0.10680764954708909\
+======TD3 Training========\
+Training time (TD3):  1.1853022495905559  minutes\
+======TD3 Validation from:  20160104 to  20160405\
+TD3 Sharpe Ratio:  0.03728661948725392\
+======GAIL Training========\
+actions (17620, 30)\
+obs (17620, 181)\
+rewards (17620,)\
+episode_returns (10,)\
+episode_starts (17620,)\
+actions (17620, 30)\
+obs (17620, 181)\
+rewards (17620,)\
+episode_returns (10,)\
+episode_starts (17620,)\
+Total trajectories: 10\
+Total transitions: 17620\
+Average returns: 131.4961901641509\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.209 seconds\
+computegrad\
+done in 0.206 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0      0.983          0\
+         1      0.639     0.0574\
+         2      0.219      0.412\
+         3      0.157       1.22\
+         4      0.562       1.64\
+         5        0.4       1.75\
+         6      0.334       2.18\
+         7     0.0966       3.81\
+         8       1.55       4.14\
+         9      0.131       5.03\
+        10     0.0856       5.51\
+done in 0.409 seconds\
+Expected: 0.185 Actual: 0.185\
+Stepsize OK!\
+vf\
+done in 0.152 seconds\
+sampling\
+done in 4.537 seconds\
+computegrad\
+done in 0.012 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0         21          0\
+         1       10.9    0.00082\
+         2       33.4     0.0224\
+         3       79.6     0.0557\
+         4        265      0.281\
+         5       69.1      0.416\
+         6       66.8      0.556\
+         7        106      0.565\
+         8        911       2.68\
+         9        254        4.2\
+        10   2.35e+03        8.9\
+done in 0.054 seconds\
+Expected: 0.616 Actual: 0.045\
+violated KL constraint. shrinking step.\
+Expected: 0.616 Actual: 0.024\
+Stepsize OK!\
+vf\
+done in 0.074 seconds\
+sampling\
+done in 4.294 seconds\
+computegrad\
+done in 0.012 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       18.6          0\
+         1        991       2.07\
+         2        596       3.85\
+         3   2.84e+03        7.9\
+         4   8.72e+03       26.3\
+         5   2.85e+03       55.6\
+         6   1.65e+03       76.6\
+         7   6.38e+03       96.4\
+         8    1.1e+04        142\
+         9   1.62e+03        281\
+        10   1.32e+03        291\
+done in 0.067 seconds\
+Expected: 4.923 Actual: 0.049\
+violated KL constraint. shrinking step.\
+Expected: 4.923 Actual: 0.027\
+violated KL constraint. shrinking step.\
+Expected: 4.923 Actual: 0.018\
+Stepsize OK!\
+vf\
+done in 0.087 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.70804 |       0.73150 |       0.64864 |      -0.00065 |       0.54199 |       0.52148\
+/Users/mac/opt/anaconda3/envs/Deep-Reinforcement-Learning/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.\
+  out=out, **kwargs)\
+/Users/mac/opt/anaconda3/envs/Deep-Reinforcement-Learning/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars\
+  ret = ret.dtype.type(ret / rcount)\
+-----------------------------------------\
+| EpThisIter              | 0           |\
+| EpTrueRewMean           | nan         |\
+| EpisodesSoFar           | 0           |\
+| TimeElapsed             | 14.8        |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.608402   |\
+| explained_variance_t... | -0.655      |\
+| meankl                  | 0.010266155 |\
+| optimgain               | 0.0182764   |\
+| reference_Q_mean        | 3.2         |\
+| reference_Q_std         | 2.64        |\
+| reference_action_mean   | -0.135      |\
+| reference_action_std    | 0.973       |\
+| reference_actor_Q_mean  | 3.99        |\
+| reference_actor_Q_std   | 2.71        |\
+| rollout/Q_mean          | 2.37        |\
+| rollout/actions_mean    | -0.0461     |\
+| rollout/actions_std     | 0.817       |\
+| rollout/episode_steps   | 1.76e+03    |\
+| rollout/episodes        | 5           |\
+| rollout/return          | 147         |\
+| rollout/return_history  | 147         |\
+| surrgain                | 0.0182764   |\
+| total/duration          | 64.1        |\
+| total/episodes          | 5           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 156         |\
+| train/loss_actor        | -3.83       |\
+| train/loss_critic       | 1.47        |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.306553554534912  minutes\
+======GAIL Validation from:  20160104 to  20160405\
+GAIL Sharpe Ratio:  0.09921782050959885\
+======Trading from:  20160405 to  20160705\
+Used Model:  <stable_baselines.ppo2.ppo2.PPO2 object at 0x1468b04e0>\
+previous_total_asset:1084823.2893040734\
+end_total_asset:1060555.594200111\
+total_reward:-24267.69510396244\
+total_cost:  6489.066004308672\
+total trades:  1584\
+Sharpe:  -0.08209483893911067\
+============================================\
+turbulence_threshold:  171.0940715631016\
+======Model training from:  20090000 to  20160405\
+======A2C Training========\
+Training time (A2C):  2.028841133912404  minutes\
+======A2C Validation from:  20160405 to  20160705\
+A2C Sharpe Ratio:  0.06864721157389285\
+======PPO Training========\
+Training time (PPO):  6.346380917231242  minutes\
+======PPO Validation from:  20160405 to  20160705\
+PPO Sharpe Ratio:  -0.09862991024713147\
+======DDPG Training========\
+Training time (DDPG):  1.0872934659322102  minutes\
+======DDPG Validation from:  20160405 to  20160705\
+DDPG Sharpe Ratio:  0.01655778767350595\
+======TD3 Training========\
+Training time (TD3):  1.316499368349711  minutes\
+======TD3 Validation from:  20160405 to  20160705\
+TD3 Sharpe Ratio:  -0.007601431404221453\
+======GAIL Training========\
+actions (18250, 30)\
+obs (18250, 181)\
+rewards (18250,)\
+episode_returns (10,)\
+episode_starts (18250,)\
+actions (18250, 30)\
+obs (18250, 181)\
+rewards (18250,)\
+episode_returns (10,)\
+episode_starts (18250,)\
+Total trajectories: 10\
+Total transitions: 18250\
+Average returns: 156.4127793951193\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.041 seconds\
+computegrad\
+done in 0.193 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.53          0\
+         1        8.1    0.00455\
+         2       26.7     0.0312\
+         3      0.535     0.0734\
+         4      0.344      0.402\
+         5       59.1      0.562\
+         6       1.57      0.644\
+         7       22.5       1.06\
+         8      0.769       1.11\
+         9       1.76       1.48\
+        10       2.26       1.48\
+done in 0.389 seconds\
+Expected: 0.125 Actual: 0.081\
+Stepsize OK!\
+vf\
+done in 0.143 seconds\
+sampling\
+done in 4.090 seconds\
+computegrad\
+done in 0.010 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.55          0\
+         1         13    0.00783\
+         2       3.12     0.0674\
+         3       1.08     0.0846\
+         4        1.6      0.109\
+         5         21      0.589\
+         6       4.66      0.614\
+         7       1.71      0.742\
+         8       3.81       1.53\
+         9       28.9       1.84\
+        10       6.11       1.88\
+done in 0.052 seconds\
+Expected: 0.153 Actual: 0.052\
+Stepsize OK!\
+vf\
+done in 0.072 seconds\
+sampling\
+done in 4.024 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       4.98          0\
+         1       12.6    0.00283\
+         2       9.98      0.198\
+         3       19.8      0.423\
+         4       70.4       1.16\
+         5        154       1.21\
+         6       33.1       2.27\
+         7       9.96       2.79\
+         8       45.7        3.2\
+         9       27.2       3.22\
+        10       19.2       3.83\
+done in 0.052 seconds\
+Expected: 0.342 Actual: 0.025\
+Stepsize OK!\
+vf\
+done in 0.078 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.71150 |       0.71899 |       0.65653 |      -0.00066 |       0.50977 |       0.51758\
+/Users/mac/opt/anaconda3/envs/Deep-Reinforcement-Learning/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.\
+  out=out, **kwargs)\
+/Users/mac/opt/anaconda3/envs/Deep-Reinforcement-Learning/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars\
+  ret = ret.dtype.type(ret / rcount)\
+------------------------------------------\
+| EpThisIter              | 0            |\
+| EpTrueRewMean           | nan          |\
+| EpisodesSoFar           | 0            |\
+| TimeElapsed             | 13.7         |\
+| TimestepsSoFar          | 1024         |\
+| entloss                 | 0.0          |\
+| entropy                 | 42.61519     |\
+| explained_variance_t... | 0.0426       |\
+| meankl                  | 0.0046564955 |\
+| optimgain               | 0.025359336  |\
+| reference_Q_mean        | 3.06         |\
+| reference_Q_std         | 2.88         |\
+| reference_action_mean   | 0.0854       |\
+| reference_action_std    | 0.955        |\
+| reference_actor_Q_mean  | 3.59         |\
+| reference_actor_Q_std   | 2.9          |\
+| rollout/Q_mean          | 1.94         |\
+| rollout/actions_mean    | 0.0859       |\
+| rollout/actions_std     | 0.81         |\
+| rollout/episode_steps   | 1.82e+03     |\
+| rollout/episodes        | 5            |\
+| rollout/return          | 161          |\
+| rollout/return_history  | 161          |\
+| surrgain                | 0.025359336  |\
+| total/duration          | 64.4         |\
+| total/episodes          | 5            |\
+| total/epochs            | 1            |\
+| total/steps             | 9998         |\
+| total/steps_per_second  | 155          |\
+| train/loss_actor        | -3.4         |\
+| train/loss_critic       | 1.19         |\
+| train/param_noise_di... | 0            |\
+------------------------------------------\
+Training time (GAIL):  1.1822443008422852  minutes\
+======GAIL Validation from:  20160405 to  20160705\
+GAIL Sharpe Ratio:  0.029742679525467806\
+======Trading from:  20160705 to  20161003\
+Used Model:  <stable_baselines.a2c.a2c.A2C object at 0x12f035cf8>\
+previous_total_asset:1060555.594200111\
+end_total_asset:1101922.843233205\
+total_reward:41367.24903309392\
+total_cost:  4766.140940730314\
+total trades:  1387\
+Sharpe:  0.18117217651481013\
+============================================\
+turbulence_threshold:  171.0940715631016\
+======Model training from:  20090000 to  20160705\
+======A2C Training========\
+Training time (A2C):  1.8060284654299419  minutes\
+======A2C Validation from:  20160705 to  20161003\
+A2C Sharpe Ratio:  0.08633012765777584\
+======PPO Training========\
+Training time (PPO):  6.383185215791067  minutes\
+======PPO Validation from:  20160705 to  20161003\
+PPO Sharpe Ratio:  0.1420256778959005\
+======DDPG Training========\
+Training time (DDPG):  1.1141437848409017  minutes\
+======DDPG Validation from:  20160705 to  20161003\
+DDPG Sharpe Ratio:  -0.039600525699731604\
+======TD3 Training========\
+Training time (TD3):  1.3915534297625223  minutes\
+======TD3 Validation from:  20160705 to  20161003\
+TD3 Sharpe Ratio:  0.07866507238069957\
+======GAIL Training========\
+actions (18880, 30)\
+obs (18880, 181)\
+rewards (18880,)\
+episode_returns (10,)\
+episode_starts (18880,)\
+actions (18880, 30)\
+obs (18880, 181)\
+rewards (18880,)\
+episode_returns (10,)\
+episode_starts (18880,)\
+Total trajectories: 10\
+Total transitions: 18880\
+Average returns: 93.27217586268671\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.159 seconds\
+computegrad\
+done in 0.213 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.42          0\
+         1       8.53     0.0186\
+         2       1.34     0.0807\
+         3       4.17       0.17\
+         4       5.14        0.4\
+         5      0.942      0.644\
+         6       8.02       1.33\
+         7       70.1       1.63\
+         8        1.7       2.59\
+         9       1.85       2.96\
+        10       3.77        3.8\
+done in 0.424 seconds\
+Expected: 0.217 Actual: 0.082\
+Stepsize OK!\
+vf\
+done in 0.156 seconds\
+sampling\
+done in 4.163 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.94          0\
+         1       8.44   0.000434\
+         2       11.7     0.0447\
+         3       8.33     0.0931\
+         4        3.9      0.112\
+         5       17.7      0.113\
+         6       5.62      0.176\
+         7       7.87      0.719\
+         8        226      0.736\
+         9        3.2       0.87\
+        10       15.5       1.08\
+done in 0.052 seconds\
+Expected: 0.141 Actual: 0.051\
+Stepsize OK!\
+vf\
+done in 0.078 seconds\
+sampling\
+done in 4.060 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       3.49          0\
+         1        198      0.115\
+         2       18.1      0.163\
+         3       12.2      0.236\
+         4         31      0.303\
+         5        459        4.2\
+         6   1.85e+03       5.29\
+         7       38.1       5.92\
+         8        105       7.22\
+         9   1.11e+03       12.9\
+        10   4.75e+03       26.1\
+done in 0.054 seconds\
+Expected: 0.869 Actual: 0.063\
+violated KL constraint. shrinking step.\
+Expected: 0.869 Actual: 0.036\
+Stepsize OK!\
+vf\
+done in 0.075 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.66874 |       0.89607 |       0.65327 |      -0.00065 |       0.59180 |       0.31348\
+/Users/mac/opt/anaconda3/envs/Deep-Reinforcement-Learning/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.\
+  out=out, **kwargs)\
+/Users/mac/opt/anaconda3/envs/Deep-Reinforcement-Learning/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars\
+  ret = ret.dtype.type(ret / rcount)\
+-----------------------------------------\
+| EpThisIter              | 0           |\
+| EpTrueRewMean           | nan         |\
+| EpisodesSoFar           | 0           |\
+| TimeElapsed             | 14.1        |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.598106   |\
+| explained_variance_t... | 0.0845      |\
+| meankl                  | 0.005621635 |\
+| optimgain               | 0.03646861  |\
+| reference_Q_mean        | 4.38        |\
+| reference_Q_std         | 3.73        |\
+| reference_action_mean   | -0.152      |\
+| reference_action_std    | 0.95        |\
+| reference_actor_Q_mean  | 5.28        |\
+| reference_actor_Q_std   | 3.98        |\
+| rollout/Q_mean          | 2.87        |\
+| rollout/actions_mean    | -0.0639     |\
+| rollout/actions_std     | 0.807       |\
+| rollout/episode_steps   | 1.89e+03    |\
+| rollout/episodes        | 5           |\
+| rollout/return          | 181         |\
+| rollout/return_history  | 181         |\
+| surrgain                | 0.03646861  |\
+| total/duration          | 66          |\
+| total/episodes          | 5           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 151         |\
+| train/loss_actor        | -4.88       |\
+| train/loss_critic       | 1.88        |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.243707263469696  minutes\
+======GAIL Validation from:  20160705 to  20161003\
+GAIL Sharpe Ratio:  -0.06793163163519604\
+======Trading from:  20161003 to  20170103\
+Used Model:  <stable_baselines.ppo2.ppo2.PPO2 object at 0x1460653c8>\
+previous_total_asset:1101922.843233205\
+end_total_asset:1150867.249297255\
+total_reward:48944.40606405004\
+total_cost:  4962.475200700557\
+total trades:  1347\
+Sharpe:  0.23211116634254128\
+============================================\
+turbulence_threshold:  171.0940715631016\
+======Model training from:  20090000 to  20161003\
+======A2C Training========\
+Training time (A2C):  1.9353439331054687  minutes\
+======A2C Validation from:  20161003 to  20170103\
+A2C Sharpe Ratio:  0.2956148108097871\
+======PPO Training========\
+Training time (PPO):  7.041322700182596  minutes\
+======PPO Validation from:  20161003 to  20170103\
+PPO Sharpe Ratio:  0.3864531248820464\
+======DDPG Training========\
+Training time (DDPG):  1.252701997756958  minutes\
+======DDPG Validation from:  20161003 to  20170103\
+DDPG Sharpe Ratio:  0.39207952704017934\
+======TD3 Training========\
+Training time (TD3):  1.5509740869204203  minutes\
+======TD3 Validation from:  20161003 to  20170103\
+TD3 Sharpe Ratio:  0.24736527750272128\
+======GAIL Training========\
+actions (19510, 30)\
+obs (19510, 181)\
+rewards (19510,)\
+episode_returns (10,)\
+episode_starts (19510,)\
+actions (19510, 30)\
+obs (19510, 181)\
+rewards (19510,)\
+episode_returns (10,)\
+episode_starts (19510,)\
+Total trajectories: 10\
+Total transitions: 19510\
+Average returns: 150.01263858744642\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.249 seconds\
+computegrad\
+done in 0.215 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.72          0\
+         1       9.45   0.000631\
+         2       4.66     0.0158\
+         3       0.33     0.0558\
+         4        168     0.0737\
+         5       11.5      0.213\
+         6      0.241      0.351\
+         7        135      0.372\
+         8       1.51      0.951\
+         9       8.78       1.11\
+        10       81.9       1.13\
+done in 0.421 seconds\
+Expected: 0.103 Actual: 0.075\
+Stepsize OK!\
+vf\
+done in 0.152 seconds\
+sampling\
+done in 4.635 seconds\
+computegrad\
+done in 0.011 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       13.8          0\
+         1       5.17   6.71e-05\
+         2       8.17   0.000151\
+         3       25.2     0.0813\
+         4       2.43      0.134\
+         5       34.1      0.134\
+         6       6.03      0.139\
+         7       2.96      0.139\
+         8       4.45      0.204\
+         9        221      0.206\
+        10       19.8      0.354\
+done in 0.053 seconds\
+Expected: 0.093 Actual: 0.029\
+Stepsize OK!\
+vf\
+done in 0.072 seconds\
+sampling\
+done in 4.223 seconds\
+computegrad\
+done in 0.010 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       2.28          0\
+         1       10.8    0.00896\
+         2       2.68     0.0738\
+         3       2.58      0.132\
+         4       4.89      0.215\
+         5       2.88      0.251\
+         6       39.6      0.377\
+         7       1.63      0.452\
+         8         20      0.852\
+         9       2.89       2.47\
+        10       60.2       2.77\
+done in 0.054 seconds\
+Expected: 0.198 Actual: 0.074\
+Stepsize OK!\
+vf\
+done in 0.078 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.67463 |       0.62562 |       0.66618 |      -0.00067 |       0.57812 |       0.68652\
+/Users/mac/opt/anaconda3/envs/Deep-Reinforcement-Learning/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.\
+  out=out, **kwargs)\
+/Users/mac/opt/anaconda3/envs/Deep-Reinforcement-Learning/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars\
+  ret = ret.dtype.type(ret / rcount)\
+----------------------------------------\
+| EpThisIter              | 0          |\
+| EpTrueRewMean           | nan        |\
+| EpisodesSoFar           | 0          |\
+| TimeElapsed             | 14.8       |\
+| TimestepsSoFar          | 1024       |\
+| entloss                 | 0.0        |\
+| entropy                 | 42.52473   |\
+| explained_variance_t... | 0.0704     |\
+| meankl                  | 0.01484668 |\
+| optimgain               | 0.07384916 |\
+| reference_Q_mean        | 3.35       |\
+| reference_Q_std         | 2.66       |\
+| reference_action_mean   | -0.0351    |\
+| reference_action_std    | 0.972      |\
+| reference_actor_Q_mean  | 4.04       |\
+| reference_actor_Q_std   | 2.72       |\
+| rollout/Q_mean          | 2.15       |\
+| rollout/actions_mean    | -0.0103    |\
+| rollout/actions_std     | 0.816      |\
+| rollout/episode_steps   | 1.95e+03   |\
+| rollout/episodes        | 5          |\
+| rollout/return          | 144        |\
+| rollout/return_history  | 144        |\
+| surrgain                | 0.07384916 |\
+| total/duration          | 74.1       |\
+| total/episodes          | 5          |\
+| total/epochs            | 1          |\
+| total/steps             | 9998       |\
+| total/steps_per_second  | 135        |\
+| train/loss_actor        | -3.98      |\
+| train/loss_critic       | 0.983      |\
+| train/param_noise_di... | 0          |\
+----------------------------------------\
+Training time (GAIL):  1.2599135557810466  minutes\
+======GAIL Validation from:  20161003 to  20170103\
+GAIL Sharpe Ratio:  0.3885118141419045\
+======Trading from:  20170103 to  20170404\
+Used Model:  <stable_baselines.ddpg.ddpg.DDPG object at 0x1405dc4e0>\
+previous_total_asset:1150867.249297255\
+end_total_asset:1245176.341517926\
+total_reward:94309.09222067101\
+total_cost:  1929.6906686347752\
+total trades:  1083\
+Sharpe:  0.5340349645025956\
+============================================\
+turbulence_threshold:  96.08032158358223\
+======Model training from:  20090000 to  20170103\
+======A2C Training========\
+Training time (A2C):  1.948208713531494  minutes\
+======A2C Validation from:  20170103 to  20170404\
+A2C Sharpe Ratio:  0.20263419190054002\
+======PPO Training========\
+Training time (PPO):  6.91183420419693  minutes\
+======PPO Validation from:  20170103 to  20170404\
+PPO Sharpe Ratio:  0.616483457728148\
+======DDPG Training========\
+Training time (DDPG):  1.220393685499827  minutes\
+======DDPG Validation from:  20170103 to  20170404\
+DDPG Sharpe Ratio:  0.15786124178925556\
+======TD3 Training========\
+Training time (TD3):  1.427243713537852  minutes\
+======TD3 Validation from:  20170103 to  20170404\
+TD3 Sharpe Ratio:  0.2754594947373037\
+======GAIL Training========\
+actions (20140, 30)\
+obs (20140, 181)\
+rewards (20140,)\
+episode_returns (10,)\
+episode_starts (20140,)\
+actions (20140, 30)\
+obs (20140, 181)\
+rewards (20140,)\
+episode_returns (10,)\
+episode_starts (20140,)\
+Total trajectories: 10\
+Total transitions: 20140\
+Average returns: 127.38192739809165\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.278 seconds\
+computegrad\
+done in 0.227 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.02          0\
+         1       0.99     0.0794\
+         2      0.484      0.457\
+         3       3.83       1.14\
+         4      0.646       1.43\
+         5       3.67       1.94\
+         6      0.883       2.84\
+         7       0.43       3.35\
+         8      0.989       5.07\
+         9       1.32       5.35\
+        10      0.893       6.43\
+done in 0.448 seconds\
+Expected: 0.239 Actual: 0.121\
+violated KL constraint. shrinking step.\
+Expected: 0.239 Actual: 0.069\
+Stepsize OK!\
+vf\
+done in 0.155 seconds\
+sampling\
+done in 4.415 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       8.43          0\
+         1       3.12    0.00367\
+         2       7.34     0.0838\
+         3       3.33      0.161\
+         4       21.6      0.354\
+         5       55.9       1.48\
+         6         88       1.62\
+         7       8.63       2.24\
+         8         20       2.51\
+         9       87.3       3.56\
+        10       82.8       6.78\
+done in 0.054 seconds\
+Expected: 0.371 Actual: 0.084\
+Stepsize OK!\
+vf\
+done in 0.077 seconds\
+sampling\
+done in 4.198 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       2.54          0\
+         1       4.53      0.003\
+         2         16     0.0232\
+         3       2.44      0.117\
+         4        7.4      0.196\
+         5       21.2      0.636\
+         6       26.1       1.09\
+         7       4.87       1.11\
+         8       36.6       1.62\
+         9       33.2       1.74\
+        10       57.2       3.54\
+done in 0.054 seconds\
+Expected: 0.249 Actual: 0.063\
+Stepsize OK!\
+vf\
+done in 0.074 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.68260 |       0.54537 |       0.62453 |      -0.00062 |       0.61816 |       0.72168\
+/Users/mac/opt/anaconda3/envs/Deep-Reinforcement-Learning/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.\
+  out=out, **kwargs)\
+/Users/mac/opt/anaconda3/envs/Deep-Reinforcement-Learning/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars\
+  ret = ret.dtype.type(ret / rcount)\
+-----------------------------------------\
+| EpThisIter              | 0           |\
+| EpTrueRewMean           | nan         |\
+| EpisodesSoFar           | 0           |\
+| TimeElapsed             | 14.6        |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.553528   |\
+| explained_variance_t... | -0.0716     |\
+| meankl                  | 0.012193713 |\
+| optimgain               | 0.06252574  |\
+| reference_Q_mean        | 3.22        |\
+| reference_Q_std         | 2.38        |\
+| reference_action_mean   | -0.172      |\
+| reference_action_std    | 0.922       |\
+| reference_actor_Q_mean  | 3.92        |\
+| reference_actor_Q_std   | 2.37        |\
+| rollout/Q_mean          | 2.27        |\
+| rollout/actions_mean    | -0.109      |\
+| rollout/actions_std     | 0.801       |\
+| rollout/episode_steps   | 2.01e+03    |\
+| rollout/episodes        | 4           |\
+| rollout/return          | 63.3        |\
+| rollout/return_history  | 63.3        |\
+| surrgain                | 0.06252574  |\
+| total/duration          | 71.9        |\
+| total/episodes          | 4           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 139         |\
+| train/loss_actor        | -3.98       |\
+| train/loss_critic       | 0.808       |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.363841168085734  minutes\
+======GAIL Validation from:  20170103 to  20170404\
+GAIL Sharpe Ratio:  0.26504371691402334\
+======Trading from:  20170404 to  20170705\
+Used Model:  <stable_baselines.ppo2.ppo2.PPO2 object at 0x13edabe48>\
+previous_total_asset:1245176.341517926\
+end_total_asset:1266168.1780757257\
+total_reward:20991.836557799717\
+total_cost:  5397.940433798965\
+total trades:  1175\
+Sharpe:  0.15842194160729248\
+============================================\
+turbulence_threshold:  171.0940715631016\
+======Model training from:  20090000 to  20170404\
+======A2C Training========\
+Training time (A2C):  2.0115480144818623  minutes\
+======A2C Validation from:  20170404 to  20170705\
+A2C Sharpe Ratio:  0.22770548740737304\
+======PPO Training========\
+Training time (PPO):  6.969791567325592  minutes\
+======PPO Validation from:  20170404 to  20170705\
+PPO Sharpe Ratio:  0.1846019687257749\
+======DDPG Training========\
+Training time (DDPG):  1.2253377040227253  minutes\
+======DDPG Validation from:  20170404 to  20170705\
+DDPG Sharpe Ratio:  0.24981674241933421\
+======TD3 Training========\
+Training time (TD3):  1.451942495505015  minutes\
+======TD3 Validation from:  20170404 to  20170705\
+TD3 Sharpe Ratio:  0.16161298486933845\
+======GAIL Training========\
+actions (20770, 30)\
+obs (20770, 181)\
+rewards (20770,)\
+episode_returns (10,)\
+episode_starts (20770,)\
+actions (20770, 30)\
+obs (20770, 181)\
+rewards (20770,)\
+episode_returns (10,)\
+episode_starts (20770,)\
+Total trajectories: 10\
+Total transitions: 20770\
+Average returns: 149.14811748894863\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.259 seconds\
+computegrad\
+done in 0.212 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.37          0\
+         1      0.346     0.0598\
+         2       1.15     0.0823\
+         3      0.287      0.324\
+         4      0.215       0.86\
+         5        1.6       1.46\
+         6      0.199       1.85\
+         7       7.15       2.34\
+         8      0.345       3.15\
+         9       0.74       3.37\
+        10       0.26       4.13\
+done in 0.412 seconds\
+Expected: 0.162 Actual: 0.077\
+violated KL constraint. shrinking step.\
+Expected: 0.162 Actual: 0.044\
+Stepsize OK!\
+vf\
+done in 0.157 seconds\
+sampling\
+done in 4.183 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       2.17          0\
+         1       6.08      0.103\
+         2       5.94      0.287\
+         3       21.8       1.44\
+         4       18.7        2.3\
+         5       39.2       3.92\
+         6       25.7        8.6\
+         7       14.6         12\
+         8       58.3       15.1\
+         9       49.6       24.9\
+        10       42.9       26.3\
+done in 0.049 seconds\
+Expected: 0.739 Actual: 0.074\
+Stepsize OK!\
+vf\
+done in 0.070 seconds\
+sampling\
+done in 4.425 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.43          0\
+         1       1.21     0.0573\
+         2       1.13     0.0732\
+         3       5.02      0.131\
+         4       12.6      0.409\
+         5       5.27      0.757\
+         6       3.21      0.834\
+         7       3.78      0.933\
+         8       24.6        1.3\
+         9       31.8       2.68\
+        10       2.68       3.17\
+done in 0.053 seconds\
+Expected: 0.193 Actual: 0.070\
+Stepsize OK!\
+vf\
+done in 0.073 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      1.00599 |       1.22832 |       0.60540 |      -0.00061 |       0.24805 |       0.08789\
+-----------------------------------------\
+| EpLenMean               | 2.08e+03    |\
+| EpRewMean               | 2332.9229   |\
+| EpThisIter              | 1           |\
+| EpTrueRewMean           | 140         |\
+| EpisodesSoFar           | 1           |\
+| TimeElapsed             | 14.5        |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.640804   |\
+| explained_variance_t... | 0.0711      |\
+| meankl                  | 0.014479054 |\
+| optimgain               | 0.06995593  |\
+| reference_Q_mean        | 4.02        |\
+| reference_Q_std         | 3.39        |\
+| reference_action_mean   | 0.105       |\
+| reference_action_std    | 0.963       |\
+| reference_actor_Q_mean  | 4.95        |\
+| reference_actor_Q_std   | 3.32        |\
+| rollout/Q_mean          | 2.41        |\
+| rollout/actions_mean    | -0.0271     |\
+| rollout/actions_std     | 0.817       |\
+| rollout/episode_steps   | 2.08e+03    |\
+| rollout/episodes        | 4           |\
+| rollout/return          | 162         |\
+| rollout/return_history  | 162         |\
+| surrgain                | 0.06995593  |\
+| total/duration          | 72.5        |\
+| total/episodes          | 4           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 138         |\
+| train/loss_actor        | -4.79       |\
+| train/loss_critic       | 1.55        |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.3884018460909526  minutes\
+======GAIL Validation from:  20170404 to  20170705\
+GAIL Sharpe Ratio:  0.26813071108112135\
+======Trading from:  20170705 to  20171003\
+Used Model:  <stable_baselines.gail.model.GAIL object at 0x147709e48>\
+previous_total_asset:1266168.1780757257\
+end_total_asset:1342681.7461917396\
+total_reward:76513.56811601389\
+total_cost:  9940.287661026912\
+total trades:  1680\
+Sharpe:  0.5290347883102233\
+============================================\
+turbulence_threshold:  171.0940715631016\
+======Model training from:  20090000 to  20170705\
+======A2C Training========\
+Training time (A2C):  2.234480365117391  minutes\
+======A2C Validation from:  20170705 to  20171003\
+A2C Sharpe Ratio:  0.25781379812135174\
+======PPO Training========\
+Training time (PPO):  6.873591848214468  minutes\
+======PPO Validation from:  20170705 to  20171003\
+PPO Sharpe Ratio:  0.22846302538256852\
+======DDPG Training========\
+Training time (DDPG):  1.1924820025761922  minutes\
+======DDPG Validation from:  20170705 to  20171003\
+DDPG Sharpe Ratio:  0.36293017273370504\
+======TD3 Training========\
+Training time (TD3):  1.4198150316874185  minutes\
+======TD3 Validation from:  20170705 to  20171003\
+TD3 Sharpe Ratio:  0.2288245087085344\
+======GAIL Training========\
+actions (21400, 30)\
+obs (21400, 181)\
+rewards (21400,)\
+episode_returns (10,)\
+episode_starts (21400,)\
+actions (21400, 30)\
+obs (21400, 181)\
+rewards (21400,)\
+episode_returns (10,)\
+episode_starts (21400,)\
+Total trajectories: 10\
+Total transitions: 21400\
+Average returns: 211.40656713748467\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.331 seconds\
+computegrad\
+done in 0.246 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.07          0\
+         1       35.2     0.0187\
+         2      0.721     0.0723\
+         3      0.476      0.511\
+         4         52       1.37\
+         5      0.485       1.42\
+         6      0.729       1.57\
+         7       1.28       1.86\
+         8       7.39       1.87\
+         9      0.258       2.28\
+        10      0.428       2.64\
+done in 0.450 seconds\
+Expected: 0.165 Actual: 0.095\
+violated KL constraint. shrinking step.\
+Expected: 0.165 Actual: 0.058\
+Stepsize OK!\
+vf\
+done in 0.163 seconds\
+sampling\
+done in 4.253 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.85          0\
+         1       39.2      0.033\
+         2       9.75      0.118\
+         3       1.74      0.127\
+         4       6.75      0.563\
+         5       2.34       0.77\
+         6       17.2       1.17\
+         7       10.1        1.2\
+         8       96.5       1.36\
+         9       1.61        1.9\
+        10       3.76       2.23\
+done in 0.049 seconds\
+Expected: 0.195 Actual: 0.102\
+Stepsize OK!\
+vf\
+done in 0.070 seconds\
+sampling\
+done in 4.518 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       3.37          0\
+         1       15.1      0.398\
+         2        539       2.58\
+         3        181       9.05\
+         4       85.5       10.7\
+         5       89.5       11.8\
+         6        313       17.1\
+         7        350         47\
+         8       98.9       58.7\
+         9        177       61.4\
+        10   1.68e+03       78.2\
+done in 0.054 seconds\
+Expected: 1.585 Actual: 0.038\
+violated KL constraint. shrinking step.\
+Expected: 1.585 Actual: 0.019\
+Stepsize OK!\
+vf\
+done in 0.072 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.75221 |       0.69225 |       0.65386 |      -0.00065 |       0.45996 |       0.56445\
+-----------------------------------------\
+| EpLenMean               | 2.14e+03    |\
+| EpRewMean               | 1673.2631   |\
+| EpThisIter              | 1           |\
+| EpTrueRewMean           | 121         |\
+| EpisodesSoFar           | 1           |\
+| TimeElapsed             | 14.9        |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.598454   |\
+| explained_variance_t... | 0.0327      |\
+| meankl                  | 0.008371724 |\
+| optimgain               | 0.019416422 |\
+| reference_Q_mean        | 3.23        |\
+| reference_Q_std         | 3.78        |\
+| reference_action_mean   | -0.165      |\
+| reference_action_std    | 0.977       |\
+| reference_actor_Q_mean  | 3.72        |\
+| reference_actor_Q_std   | 3.65        |\
+| rollout/Q_mean          | 1.84        |\
+| rollout/actions_mean    | -0.116      |\
+| rollout/actions_std     | 0.797       |\
+| rollout/episode_steps   | 2.14e+03    |\
+| rollout/episodes        | 4           |\
+| rollout/return          | 241         |\
+| rollout/return_history  | 241         |\
+| surrgain                | 0.019416422 |\
+| total/duration          | 70.6        |\
+| total/episodes          | 4           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 142         |\
+| train/loss_actor        | -4.09       |\
+| train/loss_critic       | 2.01        |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.4853858669598898  minutes\
+======GAIL Validation from:  20170705 to  20171003\
+GAIL Sharpe Ratio:  0.04381820285961249\
+======Trading from:  20171003 to  20180103\
+Used Model:  <stable_baselines.ddpg.ddpg.DDPG object at 0x1467f9ef0>\
+previous_total_asset:1342681.7461917396\
+end_total_asset:1445737.8088300817\
+total_reward:103056.06263834215\
+total_cost:  1861.6908440190819\
+total trades:  880\
+Sharpe:  0.5580795306998992\
+============================================\
+turbulence_threshold:  96.08032158358223\
+======Model training from:  20090000 to  20171003\
+======A2C Training========\
+Training time (A2C):  1.9567138353983562  minutes\
+======A2C Validation from:  20171003 to  20180103\
+A2C Sharpe Ratio:  0.4392550378759433\
+======PPO Training========\
+Training time (PPO):  6.917662401994069  minutes\
+======PPO Validation from:  20171003 to  20180103\
+PPO Sharpe Ratio:  0.4685592180311784\
+======DDPG Training========\
+Training time (DDPG):  1.224100649356842  minutes\
+======DDPG Validation from:  20171003 to  20180103\
+DDPG Sharpe Ratio:  0.6936051074269886\
+======TD3 Training========\
+Training time (TD3):  1.404606032371521  minutes\
+======TD3 Validation from:  20171003 to  20180103\
+TD3 Sharpe Ratio:  0.4908413539108615\
+======GAIL Training========\
+actions (22030, 30)\
+obs (22030, 181)\
+rewards (22030,)\
+episode_returns (10,)\
+episode_starts (22030,)\
+actions (22030, 30)\
+obs (22030, 181)\
+rewards (22030,)\
+episode_returns (10,)\
+episode_starts (22030,)\
+Total trajectories: 10\
+Total transitions: 22030\
+Average returns: 142.87441044760635\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.415 seconds\
+computegrad\
+done in 0.209 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.07          0\
+         1       6.57     0.0403\
+         2      0.553     0.0926\
+         3      0.775      0.493\
+         4      0.549       1.18\
+         5       2.14       1.47\
+         6       5.68       1.53\
+         7      0.812       2.71\
+         8      0.752          3\
+         9      0.906       3.42\
+        10       18.9        3.9\
+done in 0.425 seconds\
+Expected: 0.191 Actual: 0.095\
+Stepsize OK!\
+vf\
+done in 0.160 seconds\
+sampling\
+done in 4.323 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       4.67          0\
+         1         51    0.00754\
+         2        177      0.181\
+         3       30.1      0.701\
+         4        137       2.16\
+         5        751       3.29\
+         6        471       3.48\
+         7        195       8.76\
+         8        187       13.1\
+         9        386       13.6\
+        10        583         23\
+done in 0.048 seconds\
+Expected: 0.931 Actual: 0.069\
+violated KL constraint. shrinking step.\
+Expected: 0.931 Actual: 0.036\
+Stepsize OK!\
+vf\
+done in 0.064 seconds\
+sampling\
+done in 4.591 seconds\
+computegrad\
+done in 0.010 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       3.99          0\
+         1       7.43   0.000347\
+         2       22.8     0.0669\
+         3       4.97      0.191\
+         4        813       1.66\
+         5       48.2        1.7\
+         6       23.4        3.1\
+         7        615       4.09\
+         8       16.9       4.12\
+         9        458       10.3\
+        10        517       11.8\
+done in 0.052 seconds\
+Expected: 0.534 Actual: 0.085\
+Stepsize OK!\
+vf\
+done in 0.073 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.67316 |       0.88334 |       0.65590 |      -0.00066 |       0.59668 |       0.30859\
+-----------------------------------------\
+| EpLenMean               | 2.2e+03     |\
+| EpRewMean               | 1023.6535   |\
+| EpThisIter              | 1           |\
+| EpTrueRewMean           | 153         |\
+| EpisodesSoFar           | 1           |\
+| TimeElapsed             | 15          |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.562992   |\
+| explained_variance_t... | -0.00129    |\
+| meankl                  | 0.013475871 |\
+| optimgain               | 0.08526401  |\
+| reference_Q_mean        | 2.96        |\
+| reference_Q_std         | 3.18        |\
+| reference_action_mean   | 0.165       |\
+| reference_action_std    | 0.947       |\
+| reference_actor_Q_mean  | 3.66        |\
+| reference_actor_Q_std   | 3.31        |\
+| rollout/Q_mean          | 1.75        |\
+| rollout/actions_mean    | 0.0729      |\
+| rollout/actions_std     | 0.811       |\
+| rollout/episode_steps   | 2.2e+03     |\
+| rollout/episodes        | 4           |\
+| rollout/return          | 275         |\
+| rollout/return_history  | 275         |\
+| surrgain                | 0.08526401  |\
+| total/duration          | 72.4        |\
+| total/episodes          | 4           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 138         |\
+| train/loss_actor        | -3.49       |\
+| train/loss_critic       | 1.37        |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.4188850164413451  minutes\
+======GAIL Validation from:  20171003 to  20180103\
+GAIL Sharpe Ratio:  0.32655127649383164\
+======Trading from:  20180103 to  20180405\
+Used Model:  <stable_baselines.ddpg.ddpg.DDPG object at 0x13ed2fd30>\
+previous_total_asset:1445737.8088300817\
+end_total_asset:1455920.5670025588\
+total_reward:10182.75817247713\
+total_cost:  1731.277576782968\
+total trades:  289\
+Sharpe:  0.04237758471083956\
+============================================\
+turbulence_threshold:  96.08032158358223\
+======Model training from:  20090000 to  20180103\
+======A2C Training========\
+Training time (A2C):  1.997540799776713  minutes\
+======A2C Validation from:  20180103 to  20180405\
+A2C Sharpe Ratio:  -0.03670234026629219\
+======PPO Training========\
+Training time (PPO):  6.8384168664614355  minutes\
+======PPO Validation from:  20180103 to  20180405\
+PPO Sharpe Ratio:  0.09970291471516543\
+======DDPG Training========\
+Training time (DDPG):  1.1959402680397033  minutes\
+======DDPG Validation from:  20180103 to  20180405\
+DDPG Sharpe Ratio:  -0.05623021484846448\
+======TD3 Training========\
+Training time (TD3):  1.398037346204122  minutes\
+======TD3 Validation from:  20180103 to  20180405\
+TD3 Sharpe Ratio:  -0.02627696791482267\
+======GAIL Training========\
+actions (22660, 30)\
+obs (22660, 181)\
+rewards (22660,)\
+episode_returns (10,)\
+episode_starts (22660,)\
+actions (22660, 30)\
+obs (22660, 181)\
+rewards (22660,)\
+episode_returns (10,)\
+episode_starts (22660,)\
+Total trajectories: 10\
+Total transitions: 22660\
+Average returns: 149.57501025288366\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.682 seconds\
+computegrad\
+done in 0.217 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.37          0\
+         1       0.59      0.078\
+         2      0.393      0.325\
+         3      0.279      0.949\
+         4       1.21       1.29\
+         5      0.561       1.61\
+         6       0.26       1.99\
+         7      0.653       2.69\
+         8      0.679       3.68\
+         9      0.346       3.87\
+        10      0.432       4.64\
+done in 0.430 seconds\
+Expected: 0.185 Actual: 0.103\
+Stepsize OK!\
+vf\
+done in 0.153 seconds\
+sampling\
+done in 4.246 seconds\
+computegrad\
+done in 0.010 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0        7.9          0\
+         1         60     0.0872\
+         2       78.6      0.582\
+         3       36.7      0.839\
+         4        134       1.05\
+         5       5.12       2.33\
+         6       21.1        2.5\
+         7       87.4       2.66\
+         8         14       3.37\
+         9       26.7       5.16\
+        10        905       8.17\
+done in 0.049 seconds\
+Expected: 0.550 Actual: 0.022\
+Stepsize OK!\
+vf\
+done in 0.065 seconds\
+sampling\
+done in 4.488 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       3.15          0\
+         1       2.55   0.000843\
+         2       8.85     0.0325\
+         3       2.97      0.115\
+         4        3.2      0.148\
+         5       16.8      0.344\
+         6        179       0.41\
+         7       14.4      0.999\
+         8       2.69       1.13\
+         9       47.4       2.09\
+        10        190       2.19\
+done in 0.053 seconds\
+Expected: 0.189 Actual: 0.095\
+Stepsize OK!\
+vf\
+done in 0.073 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.68569 |       0.34079 |       0.58839 |      -0.00059 |       0.60645 |       0.96582\
+-----------------------------------------\
+| EpLenMean               | 2.27e+03    |\
+| EpRewMean               | 1508.4429   |\
+| EpThisIter              | 1           |\
+| EpTrueRewMean           | 156         |\
+| EpisodesSoFar           | 1           |\
+| TimeElapsed             | 15.1        |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.57324    |\
+| explained_variance_t... | -0.0292     |\
+| meankl                  | 0.009375362 |\
+| optimgain               | 0.0948382   |\
+| reference_Q_mean        | 4.67        |\
+| reference_Q_std         | 3.77        |\
+| reference_action_mean   | 0.0895      |\
+| reference_action_std    | 0.968       |\
+| reference_actor_Q_mean  | 5.76        |\
+| reference_actor_Q_std   | 3.96        |\
+| rollout/Q_mean          | 3.35        |\
+| rollout/actions_mean    | 0.0755      |\
+| rollout/actions_std     | 0.806       |\
+| rollout/episode_steps   | 2.27e+03    |\
+| rollout/episodes        | 4           |\
+| rollout/return          | 230         |\
+| rollout/return_history  | 230         |\
+| surrgain                | 0.0948382   |\
+| total/duration          | 70.8        |\
+| total/episodes          | 4           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 141         |\
+| train/loss_actor        | -5.88       |\
+| train/loss_critic       | 1.82        |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.4978410998980205  minutes\
+======GAIL Validation from:  20180103 to  20180405\
+GAIL Sharpe Ratio:  -0.06028961731538375\
+======Trading from:  20180405 to  20180705\
+Used Model:  <stable_baselines.ppo2.ppo2.PPO2 object at 0x146d58780>\
+previous_total_asset:1455920.5670025588\
+end_total_asset:1469167.3928111664\
+total_reward:13246.825808607507\
+total_cost:  6518.947938371351\
+total trades:  1083\
+Sharpe:  0.0640073703007127\
+============================================\
+turbulence_threshold:  96.08032158358223\
+======Model training from:  20090000 to  20180405\
+======A2C Training========\
+Training time (A2C):  1.9322511355082195  minutes\
+======A2C Validation from:  20180405 to  20180705\
+A2C Sharpe Ratio:  -0.1707817895493665\
+======PPO Training========\
+Training time (PPO):  6.914178514480591  minutes\
+======PPO Validation from:  20180405 to  20180705\
+PPO Sharpe Ratio:  -0.14043027487277362\
+======DDPG Training========\
+Training time (DDPG):  1.2040761351585387  minutes\
+======DDPG Validation from:  20180405 to  20180705\
+DDPG Sharpe Ratio:  0.09497627574022108\
+======TD3 Training========\
+Training time (TD3):  1.4238305846850077  minutes\
+======TD3 Validation from:  20180405 to  20180705\
+TD3 Sharpe Ratio:  0.06072145612792435\
+======GAIL Training========\
+actions (23290, 30)\
+obs (23290, 181)\
+rewards (23290,)\
+episode_returns (10,)\
+episode_starts (23290,)\
+actions (23290, 30)\
+obs (23290, 181)\
+rewards (23290,)\
+episode_returns (10,)\
+episode_starts (23290,)\
+Total trajectories: 10\
+Total transitions: 23290\
+Average returns: 233.1579464307124\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.380 seconds\
+computegrad\
+done in 0.239 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       6.79          0\
+         1      0.903     0.0698\
+         2       3.44     0.0909\
+         3       1.84      0.169\
+         4       1.66       1.24\
+         5       4.23       2.84\
+         6       3.52       3.44\
+         7       46.1          4\
+         8        1.8       7.55\
+         9       29.3       12.4\
+        10       4.28       17.1\
+done in 0.448 seconds\
+Expected: 0.446 Actual: 0.068\
+Stepsize OK!\
+vf\
+done in 0.163 seconds\
+sampling\
+done in 4.317 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       51.1          0\
+         1       4.92   7.25e-05\
+         2        110    0.00116\
+         3       8.82    0.00983\
+         4       16.8       0.04\
+         5       53.6     0.0403\
+         6       14.2     0.0785\
+         7       66.4     0.0795\
+         8       11.1      0.184\
+         9       40.7      0.185\
+        10       7.45       0.26\
+done in 0.055 seconds\
+Expected: 0.089 Actual: 0.046\
+Stepsize OK!\
+vf\
+done in 0.072 seconds\
+sampling\
+done in 4.418 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       16.6          0\
+         1        303      0.576\
+         2   2.12e+03       2.59\
+         3        935       6.34\
+         4   1.74e+03       12.6\
+         5   4.65e+03       53.5\
+         6        925       93.3\
+         7   1.88e+03        204\
+         8   2.49e+03        207\
+         9   1.62e+03        223\
+        10        905        246\
+done in 0.053 seconds\
+Expected: 4.375 Actual: 0.048\
+Stepsize OK!\
+vf\
+done in 0.075 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.93919 |       0.73492 |       0.61638 |      -0.00062 |       0.37500 |       0.53027\
+-----------------------------------------\
+| EpLenMean               | 2.33e+03    |\
+| EpRewMean               | 1162.6478   |\
+| EpThisIter              | 1           |\
+| EpTrueRewMean           | 192         |\
+| EpisodesSoFar           | 1           |\
+| TimeElapsed             | 14.9        |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.559525   |\
+| explained_variance_t... | 0.00337     |\
+| meankl                  | 0.009617079 |\
+| optimgain               | 0.048259996 |\
+| reference_Q_mean        | 4.31        |\
+| reference_Q_std         | 2.79        |\
+| reference_action_mean   | 0.000569    |\
+| reference_action_std    | 0.968       |\
+| reference_actor_Q_mean  | 5.48        |\
+| reference_actor_Q_std   | 3.17        |\
+| rollout/Q_mean          | 2.63        |\
+| rollout/actions_mean    | -0.0547     |\
+| rollout/actions_std     | 0.813       |\
+| rollout/episode_steps   | 2.33e+03    |\
+| rollout/episodes        | 4           |\
+| rollout/return          | 225         |\
+| rollout/return_history  | 225         |\
+| surrgain                | 0.048259996 |\
+| total/duration          | 71.3        |\
+| total/episodes          | 4           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 140         |\
+| train/loss_actor        | -5.21       |\
+| train/loss_critic       | 1.73        |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.5621526996294657  minutes\
+======GAIL Validation from:  20180405 to  20180705\
+GAIL Sharpe Ratio:  -0.1506631459356049\
+======Trading from:  20180705 to  20181003\
+Used Model:  <stable_baselines.ddpg.ddpg.DDPG object at 0x1403ce438>\
+previous_total_asset:1469167.3928111664\
+end_total_asset:1515180.981840462\
+total_reward:46013.5890292956\
+total_cost:  5259.395605906653\
+total trades:  669\
+Sharpe:  0.3627881807451872\
+============================================\
+turbulence_threshold:  96.08032158358223\
+======Model training from:  20090000 to  20180705\
+======A2C Training========\
+Training time (A2C):  1.9621368845303853  minutes\
+======A2C Validation from:  20180705 to  20181003\
+A2C Sharpe Ratio:  0.14670143221667328\
+======PPO Training========\
+Training time (PPO):  6.7555565476417545  minutes\
+======PPO Validation from:  20180705 to  20181003\
+PPO Sharpe Ratio:  0.14321205969157846\
+======DDPG Training========\
+Training time (DDPG):  1.1899088144302368  minutes\
+======DDPG Validation from:  20180705 to  20181003\
+DDPG Sharpe Ratio:  0.17326298388169428\
+======TD3 Training========\
+Training time (TD3):  1.3724502007166544  minutes\
+======TD3 Validation from:  20180705 to  20181003\
+TD3 Sharpe Ratio:  0.24767179239478668\
+======GAIL Training========\
+actions (23920, 30)\
+obs (23920, 181)\
+rewards (23920,)\
+episode_returns (10,)\
+episode_starts (23920,)\
+actions (23920, 30)\
+obs (23920, 181)\
+rewards (23920,)\
+episode_returns (10,)\
+episode_starts (23920,)\
+Total trajectories: 10\
+Total transitions: 23920\
+Average returns: 149.92301211816948\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.658 seconds\
+computegrad\
+done in 0.225 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.19          0\
+         1       1.08      0.093\
+         2       2.07       1.23\
+         3       3.61       4.17\
+         4       6.04       9.45\
+         5         18       11.7\
+         6       6.61       16.4\
+         7       6.85       18.6\
+         8       3.02       25.6\
+         9       23.2       28.6\
+        10        8.6       33.9\
+done in 0.460 seconds\
+Expected: 0.649 Actual: 0.052\
+Stepsize OK!\
+vf\
+done in 0.185 seconds\
+sampling\
+done in 4.649 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       8.72          0\
+         1       4.19     0.0213\
+         2       5.91     0.0287\
+         3       4.83      0.189\
+         4       14.8      0.339\
+         5         36      0.851\
+         6       21.3       1.34\
+         7       8.26        1.6\
+         8       61.9       1.71\
+         9       32.7       5.21\
+        10        136        6.4\
+done in 0.054 seconds\
+Expected: 0.370 Actual: 0.081\
+Stepsize OK!\
+vf\
+done in 0.074 seconds\
+sampling\
+done in 4.900 seconds\
+computegrad\
+done in 0.012 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       2.19          0\
+         1       15.2     0.0533\
+         2       2.69      0.116\
+         3       7.05      0.169\
+         4       40.1      0.773\
+         5       17.4       1.49\
+         6       10.2       1.88\
+         7       49.8       3.38\
+         8       62.8       5.13\
+         9        129       5.78\
+        10         28       7.55\
+done in 0.055 seconds\
+Expected: 0.378 Actual: 0.082\
+Stepsize OK!\
+vf\
+done in 0.076 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.70422 |       0.62957 |       0.64743 |      -0.00065 |       0.54199 |       0.66113\
+-----------------------------------------\
+| EpLenMean               | 2.39e+03    |\
+| EpRewMean               | 619.19086   |\
+| EpThisIter              | 1           |\
+| EpTrueRewMean           | 137         |\
+| EpisodesSoFar           | 1           |\
+| TimeElapsed             | 16          |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.62629    |\
+| explained_variance_t... | -0.0158     |\
+| meankl                  | 0.011105706 |\
+| optimgain               | 0.0824503   |\
+| reference_Q_mean        | 3.2         |\
+| reference_Q_std         | 2.69        |\
+| reference_action_mean   | -0.143      |\
+| reference_action_std    | 0.947       |\
+| reference_actor_Q_mean  | 3.97        |\
+| reference_actor_Q_std   | 2.71        |\
+| rollout/Q_mean          | 1.94        |\
+| rollout/actions_mean    | -0.121      |\
+| rollout/actions_std     | 0.798       |\
+| rollout/episode_steps   | 2.39e+03    |\
+| rollout/episodes        | 4           |\
+| rollout/return          | 129         |\
+| rollout/return_history  | 129         |\
+| surrgain                | 0.0824503   |\
+| total/duration          | 70.4        |\
+| total/episodes          | 4           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 142         |\
+| train/loss_actor        | -3.82       |\
+| train/loss_critic       | 1.28        |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.592151117324829  minutes\
+======GAIL Validation from:  20180705 to  20181003\
+GAIL Sharpe Ratio:  0.15918694778840017\
+======Trading from:  20181003 to  20190104\
+Used Model:  <stable_baselines.td3.td3.TD3 object at 0x14394e400>\
+previous_total_asset:1515180.981840462\
+end_total_asset:1522644.5876727453\
+total_reward:7463.605832283385\
+total_cost:  1152.8555406540654\
+total trades:  135\
+Sharpe:  0.11227732930078677\
+============================================\
+turbulence_threshold:  171.0940715631016\
+======Model training from:  20090000 to  20181003\
+======A2C Training========\
+Training time (A2C):  1.9716876864433288  minutes\
+======A2C Validation from:  20181003 to  20190104\
+A2C Sharpe Ratio:  -0.3160746844827197\
+======PPO Training========\
+Training time (PPO):  6.838598867257436  minutes\
+======PPO Validation from:  20181003 to  20190104\
+PPO Sharpe Ratio:  -0.3674581456248049\
+======DDPG Training========\
+Training time (DDPG):  1.2082335829734803  minutes\
+======DDPG Validation from:  20181003 to  20190104\
+DDPG Sharpe Ratio:  -0.2925430084668775\
+======TD3 Training========\
+Training time (TD3):  1.3946362495422364  minutes\
+======TD3 Validation from:  20181003 to  20190104\
+TD3 Sharpe Ratio:  -0.32712085191093476\
+======GAIL Training========\
+actions (24550, 30)\
+obs (24550, 181)\
+rewards (24550,)\
+episode_returns (10,)\
+episode_starts (24550,)\
+actions (24550, 30)\
+obs (24550, 181)\
+rewards (24550,)\
+episode_returns (10,)\
+episode_starts (24550,)\
+Total trajectories: 10\
+Total transitions: 24550\
+Average returns: 173.05400139046833\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.485 seconds\
+computegrad\
+done in 0.221 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.02          0\
+         1       1.96     0.0685\
+         2       1.25     0.0938\
+         3      0.662      0.496\
+         4       1.24        1.5\
+         5       1.01       2.06\
+         6       19.9       2.88\
+         7       5.42       3.39\
+         8      0.842       4.18\
+         9       1.83       7.82\
+        10       4.57       8.75\
+done in 0.449 seconds\
+Expected: 0.283 Actual: 0.071\
+Stepsize OK!\
+vf\
+done in 0.164 seconds\
+sampling\
+done in 4.303 seconds\
+computegrad\
+done in 0.010 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       5.13          0\
+         1       11.6     0.0109\
+         2         37      0.274\
+         3       25.8      0.499\
+         4       36.7      0.769\
+         5        136       1.35\
+         6       33.4       5.25\
+         7        731       6.61\
+         8        574       8.51\
+         9        274       12.4\
+        10       35.1       14.6\
+done in 0.050 seconds\
+Expected: 0.687 Actual: 0.063\
+violated KL constraint. shrinking step.\
+Expected: 0.687 Actual: 0.039\
+Stepsize OK!\
+vf\
+done in 0.067 seconds\
+sampling\
+done in 4.606 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       10.1          0\
+         1        269      0.238\
+         2        395       1.07\
+         3        120       1.51\
+         4   1.48e+03       5.16\
+         5   2.54e+03       30.4\
+         6        949       47.6\
+         7   1.02e+03       59.8\
+         8   8.75e+03       73.1\
+         9   2.49e+03       82.5\
+        10   1.35e+03        136\
+done in 0.057 seconds\
+Expected: 2.827 Actual: 0.051\
+Stepsize OK!\
+vf\
+done in 0.077 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.82409 |       0.91110 |       0.64339 |      -0.00064 |       0.39355 |       0.30859\
+-----------------------------------------\
+| EpLenMean               | 2.46e+03    |\
+| EpRewMean               | 3591.606    |\
+| EpThisIter              | 1           |\
+| EpTrueRewMean           | 145         |\
+| EpisodesSoFar           | 1           |\
+| TimeElapsed             | 15.1        |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.652203   |\
+| explained_variance_t... | 0.00271     |\
+| meankl                  | 0.010339429 |\
+| optimgain               | 0.05095525  |\
+| reference_Q_mean        | 2.26        |\
+| reference_Q_std         | 3.22        |\
+| reference_action_mean   | -0.0784     |\
+| reference_action_std    | 0.959       |\
+| reference_actor_Q_mean  | 3.07        |\
+| reference_actor_Q_std   | 3.2         |\
+| rollout/Q_mean          | 1.63        |\
+| rollout/actions_mean    | 0.0989      |\
+| rollout/actions_std     | 0.814       |\
+| rollout/episode_steps   | 2.46e+03    |\
+| rollout/episodes        | 4           |\
+| rollout/return          | 369         |\
+| rollout/return_history  | 369         |\
+| surrgain                | 0.05095525  |\
+| total/duration          | 71.6        |\
+| total/episodes          | 4           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 140         |\
+| train/loss_actor        | -3.76       |\
+| train/loss_critic       | 2.35        |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.6191219369570413  minutes\
+======GAIL Validation from:  20181003 to  20190104\
+GAIL Sharpe Ratio:  -0.3905770581747517\
+======Trading from:  20190104 to  20190405\
+Used Model:  <stable_baselines.ddpg.ddpg.DDPG object at 0x146a75550>\
+previous_total_asset:1522644.5876727453\
+end_total_asset:1575092.3137790542\
+total_reward:52447.726106308866\
+total_cost:  3125.659159769421\
+total trades:  996\
+Sharpe:  0.11896439302365022\
+============================================\
+turbulence_threshold:  96.08032158358223\
+======Model training from:  20090000 to  20190104\
+======A2C Training========\
+Training time (A2C):  1.9643115043640136  minutes\
+======A2C Validation from:  20190104 to  20190405\
+A2C Sharpe Ratio:  -0.07511554585838595\
+======PPO Training========\
+Training time (PPO):  6.872562833627065  minutes\
+======PPO Validation from:  20190104 to  20190405\
+PPO Sharpe Ratio:  0.22587770266177634\
+======DDPG Training========\
+Training time (DDPG):  1.1973109324773152  minutes\
+======DDPG Validation from:  20190104 to  20190405\
+DDPG Sharpe Ratio:  0.1423625913225959\
+======TD3 Training========\
+Training time (TD3):  1.3919726967811585  minutes\
+======TD3 Validation from:  20190104 to  20190405\
+TD3 Sharpe Ratio:  0.01787933263419104\
+======GAIL Training========\
+actions (25180, 30)\
+obs (25180, 181)\
+rewards (25180,)\
+episode_returns (10,)\
+episode_starts (25180,)\
+actions (25180, 30)\
+obs (25180, 181)\
+rewards (25180,)\
+episode_returns (10,)\
+episode_starts (25180,)\
+Total trajectories: 10\
+Total transitions: 25180\
+Average returns: 132.84122411190765\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.692 seconds\
+computegrad\
+done in 0.218 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.36          0\
+         1      0.537     0.0705\
+         2      0.602      0.382\
+         3       0.49       1.22\
+         4      0.979       2.82\
+         5      0.467       2.98\
+         6      0.908       3.67\
+         7      0.458       5.22\
+         8       2.64       6.02\
+         9      0.711       6.78\
+        10      0.261        7.5\
+done in 0.431 seconds\
+Expected: 0.246 Actual: 0.071\
+violated KL constraint. shrinking step.\
+Expected: 0.246 Actual: 0.046\
+Stepsize OK!\
+vf\
+done in 0.160 seconds\
+sampling\
+done in 4.108 seconds\
+computegrad\
+done in 0.008 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.51          0\
+         1       13.8     0.0755\
+         2       1.98      0.124\
+         3       5.02      0.384\
+         4       2.57      0.722\
+         5       17.8       1.65\
+         6       28.3       3.71\
+         7       9.42       3.84\
+         8       4.53       4.25\
+         9       8.14       5.03\
+        10       19.2       6.73\
+done in 0.046 seconds\
+Expected: 0.319 Actual: 0.099\
+violated KL constraint. shrinking step.\
+Expected: 0.319 Actual: 0.049\
+Stepsize OK!\
+vf\
+done in 0.061 seconds\
+sampling\
+done in 4.481 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       2.86          0\
+         1       11.1     0.0147\
+         2       4.65     0.0231\
+         3       10.7     0.0597\
+         4       3.14      0.156\
+         5       20.7      0.207\
+         6       24.5          1\
+         7        160       1.31\
+         8       12.2        1.5\
+         9       5.51       1.88\
+        10       24.1       2.65\
+done in 0.053 seconds\
+Expected: 0.225 Actual: 0.065\
+Stepsize OK!\
+vf\
+done in 0.072 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.69800 |       0.61273 |       0.65506 |      -0.00066 |       0.55469 |       0.68066\
+-----------------------------------------\
+| EpLenMean               | 2.52e+03    |\
+| EpRewMean               | 1793.0504   |\
+| EpThisIter              | 1           |\
+| EpTrueRewMean           | 125         |\
+| EpisodesSoFar           | 1           |\
+| TimeElapsed             | 14.9        |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.60063    |\
+| explained_variance_t... | -0.0985     |\
+| meankl                  | 0.007931571 |\
+| optimgain               | 0.06462982  |\
+| reference_Q_mean        | 4.53        |\
+| reference_Q_std         | 3.92        |\
+| reference_action_mean   | -0.00215    |\
+| reference_action_std    | 0.964       |\
+| reference_actor_Q_mean  | 5.5         |\
+| reference_actor_Q_std   | 4.02        |\
+| rollout/Q_mean          | 2.94        |\
+| rollout/actions_mean    | -0.0704     |\
+| rollout/actions_std     | 0.812       |\
+| rollout/episode_steps   | 2.52e+03    |\
+| rollout/episodes        | 3           |\
+| rollout/return          | 298         |\
+| rollout/return_history  | 298         |\
+| surrgain                | 0.06462982  |\
+| total/duration          | 70.8        |\
+| total/episodes          | 3           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 141         |\
+| train/loss_actor        | -5.4        |\
+| train/loss_critic       | 2.78        |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.6388561010360718  minutes\
+======GAIL Validation from:  20190104 to  20190405\
+GAIL Sharpe Ratio:  0.12060259885625839\
+======Trading from:  20190405 to  20190708\
+Used Model:  <stable_baselines.ppo2.ppo2.PPO2 object at 0x144e61eb8>\
+previous_total_asset:1575092.3137790542\
+end_total_asset:1580381.1102722338\
+total_reward:5288.7964931796305\
+total_cost:  1044.6760228275116\
+total trades:  143\
+Sharpe:  0.32085385232955316\
+============================================\
+turbulence_threshold:  96.08032158358223\
+======Model training from:  20090000 to  20190405\
+======A2C Training========\
+Training time (A2C):  2.019402499993642  minutes\
+======A2C Validation from:  20190405 to  20190708\
+A2C Sharpe Ratio:  0.04480396875368073\
+======PPO Training========\
+Training time (PPO):  6.998332965373993  minutes\
+======PPO Validation from:  20190405 to  20190708\
+PPO Sharpe Ratio:  0.24731788457167783\
+======DDPG Training========\
+Training time (DDPG):  1.1962519367535909  minutes\
+======DDPG Validation from:  20190405 to  20190708\
+DDPG Sharpe Ratio:  0.1728748215337317\
+======TD3 Training========\
+Training time (TD3):  1.4338695804278057  minutes\
+======TD3 Validation from:  20190405 to  20190708\
+TD3 Sharpe Ratio:  0.20492766314297028\
+======GAIL Training========\
+actions (25810, 30)\
+obs (25810, 181)\
+rewards (25810,)\
+episode_returns (10,)\
+episode_starts (25810,)\
+actions (25810, 30)\
+obs (25810, 181)\
+rewards (25810,)\
+episode_returns (10,)\
+episode_starts (25810,)\
+Total trajectories: 10\
+Total transitions: 25810\
+Average returns: 133.63254879563465\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.581 seconds\
+computegrad\
+done in 0.234 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       2.04          0\
+         1       4.36      0.223\
+         2       19.4       1.48\
+         3       9.88       1.77\
+         4       20.4       10.6\
+         5       32.3         16\
+         6        105         25\
+         7         13       38.6\
+         8        234       43.2\
+         9       35.8         49\
+        10       13.1       62.7\
+done in 0.464 seconds\
+Expected: 1.141 Actual: 0.058\
+Stepsize OK!\
+vf\
+done in 0.165 seconds\
+sampling\
+done in 4.411 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       6.47          0\
+         1        384      0.765\
+         2       45.9       1.05\
+         3       61.8       2.02\
+         4        116       3.16\
+         5       39.1          4\
+         6        269       5.66\
+         7        996       6.46\
+         8        267       18.1\
+         9        231       25.4\
+        10        546       49.2\
+done in 0.056 seconds\
+Expected: 1.438 Actual: 0.055\
+Stepsize OK!\
+vf\
+done in 0.074 seconds\
+sampling\
+done in 4.669 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.74          0\
+         1       8.17     0.0395\
+         2        2.6      0.133\
+         3       14.3      0.221\
+         4       28.1       1.17\
+         5       5.72       1.48\
+         6       11.5       1.61\
+         7       28.6       6.63\
+         8         36       7.16\
+         9       10.8       8.56\
+        10        101       14.5\
+done in 0.059 seconds\
+Expected: 0.495 Actual: 0.092\
+Stepsize OK!\
+vf\
+done in 0.075 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.69391 |       0.92893 |       0.63491 |      -0.00063 |       0.55762 |       0.24316\
+----------------------------------------\
+| EpLenMean               | 2.58e+03   |\
+| EpRewMean               | 1787.5071  |\
+| EpThisIter              | 1          |\
+| EpTrueRewMean           | 189        |\
+| EpisodesSoFar           | 1          |\
+| TimeElapsed             | 15.5       |\
+| TimestepsSoFar          | 1024       |\
+| entloss                 | 0.0        |\
+| entropy                 | 42.54835   |\
+| explained_variance_t... | -0.0271    |\
+| meankl                  | 0.01380971 |\
+| optimgain               | 0.09195499 |\
+| reference_Q_mean        | 3.53       |\
+| reference_Q_std         | 4.43       |\
+| reference_action_mean   | 0.193      |\
+| reference_action_std    | 0.929      |\
+| reference_actor_Q_mean  | 4.47       |\
+| reference_actor_Q_std   | 4.49       |\
+| rollout/Q_mean          | 2.58       |\
+| rollout/actions_mean    | 0.0268     |\
+| rollout/actions_std     | 0.821      |\
+| rollout/episode_steps   | 2.58e+03   |\
+| rollout/episodes        | 3          |\
+| rollout/return          | 265        |\
+| rollout/return_history  | 265        |\
+| surrgain                | 0.09195499 |\
+| total/duration          | 70.8       |\
+| total/episodes          | 3          |\
+| total/epochs            | 1          |\
+| total/steps             | 9998       |\
+| total/steps_per_second  | 141        |\
+| train/loss_actor        | -4.85      |\
+| train/loss_critic       | 2.23       |\
+| train/param_noise_di... | 0          |\
+----------------------------------------\
+Training time (GAIL):  1.682918131351471  minutes\
+======GAIL Validation from:  20190405 to  20190708\
+GAIL Sharpe Ratio:  0.06069132801997267\
+======Trading from:  20190708 to  20191004\
+Used Model:  <stable_baselines.ppo2.ppo2.PPO2 object at 0x149e1b6a0>\
+previous_total_asset:1580381.1102722338\
+end_total_asset:1581760.960854767\
+total_reward:1379.8505825330503\
+total_cost:  1879.8623785812288\
+total trades:  304\
+Sharpe:  0.03161849975511299\
+============================================\
+turbulence_threshold:  96.08032158358223\
+======Model training from:  20090000 to  20190708\
+======A2C Training========\
+Training time (A2C):  2.011640751361847  minutes\
+======A2C Validation from:  20190708 to  20191004\
+A2C Sharpe Ratio:  0.15451820659486554\
+======PPO Training========\
+Training time (PPO):  7.0029165863990785  minutes\
+======PPO Validation from:  20190708 to  20191004\
+PPO Sharpe Ratio:  -0.1705663310490294\
+======DDPG Training========\
+Training time (DDPG):  1.2042501330375672  minutes\
+======DDPG Validation from:  20190708 to  20191004\
+DDPG Sharpe Ratio:  0.08913537131537097\
+======TD3 Training========\
+Training time (TD3):  1.4152721842130025  minutes\
+======TD3 Validation from:  20190708 to  20191004\
+TD3 Sharpe Ratio:  0.047357029432986\
+======GAIL Training========\
+actions (26440, 30)\
+obs (26440, 181)\
+rewards (26440,)\
+episode_returns (10,)\
+episode_starts (26440,)\
+actions (26440, 30)\
+obs (26440, 181)\
+rewards (26440,)\
+episode_returns (10,)\
+episode_starts (26440,)\
+Total trajectories: 10\
+Total transitions: 26440\
+Average returns: 522.8036488111829\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.755 seconds\
+computegrad\
+done in 0.231 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0      0.981          0\
+         1       0.56      0.064\
+         2      0.372      0.349\
+         3       0.41       1.26\
+         4      0.612       1.85\
+         5       1.31        2.2\
+         6      0.218        2.5\
+         7      0.199       3.82\
+         8      0.356       4.13\
+         9      0.245       4.23\
+        10      0.351       5.55\
+done in 0.453 seconds\
+Expected: 0.200 Actual: 0.105\
+violated KL constraint. shrinking step.\
+Expected: 0.200 Actual: 0.062\
+Stepsize OK!\
+vf\
+done in 0.163 seconds\
+sampling\
+done in 4.696 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       2.42          0\
+         1         10      0.028\
+         2       8.03      0.155\
+         3       7.34      0.232\
+         4       13.7      0.367\
+         5       13.4       0.49\
+         6       24.3        1.3\
+         7       15.8       1.69\
+         8       24.2       2.21\
+         9       65.6       3.52\
+        10       50.3       4.42\
+done in 0.052 seconds\
+Expected: 0.305 Actual: 0.077\
+Stepsize OK!\
+vf\
+done in 0.073 seconds\
+sampling\
+done in 4.895 seconds\
+computegrad\
+done in 0.010 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.28          0\
+         1       4.12     0.0678\
+         2       2.06      0.108\
+         3       6.29       0.25\
+         4       3.62      0.601\
+         5       4.48      0.712\
+         6       2.96      0.812\
+         7       12.2       1.81\
+         8       2.96       2.69\
+         9       8.63        3.3\
+        10       48.3       4.19\
+done in 0.055 seconds\
+Expected: 0.239 Actual: 0.072\
+Stepsize OK!\
+vf\
+done in 0.075 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.82233 |       0.87779 |       0.64806 |      -0.00065 |       0.40820 |       0.29980\
+-----------------------------------------\
+| EpLenMean               | 2.64e+03    |\
+| EpRewMean               | 1955.2216   |\
+| EpThisIter              | 1           |\
+| EpTrueRewMean           | 128         |\
+| EpisodesSoFar           | 1           |\
+| TimeElapsed             | 16.1        |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.65984    |\
+| explained_variance_t... | 0.0416      |\
+| meankl                  | 0.012477651 |\
+| optimgain               | 0.072197914 |\
+| reference_Q_mean        | 2.97        |\
+| reference_Q_std         | 3.08        |\
+| reference_action_mean   | 0.0544      |\
+| reference_action_std    | 0.964       |\
+| reference_actor_Q_mean  | 4.15        |\
+| reference_actor_Q_std   | 3.09        |\
+| rollout/Q_mean          | 1.85        |\
+| rollout/actions_mean    | 0.029       |\
+| rollout/actions_std     | 0.795       |\
+| rollout/episode_steps   | 2.64e+03    |\
+| rollout/episodes        | 3           |\
+| rollout/return          | 159         |\
+| rollout/return_history  | 159         |\
+| surrgain                | 0.072197914 |\
+| total/duration          | 71.3        |\
+| total/episodes          | 3           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 140         |\
+| train/loss_actor        | -3.64       |\
+| train/loss_critic       | 1.64        |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.7055464148521424  minutes\
+======GAIL Validation from:  20190708 to  20191004\
+GAIL Sharpe Ratio:  -0.20953202729876805\
+======Trading from:  20191004 to  20200106\
+Used Model:  <stable_baselines.a2c.a2c.A2C object at 0x14a213160>\
+previous_total_asset:1581760.960854767\
+end_total_asset:1582406.8128560304\
+total_reward:645.8520012635272\
+total_cost:  197.75135853797914\
+total trades:  48\
+Sharpe:  0.11204745680482225\
+============================================\
+turbulence_threshold:  96.08032158358223\
+======Model training from:  20090000 to  20191004\
+======A2C Training========\
+Training time (A2C):  2.1064061005910237  minutes\
+======A2C Validation from:  20191004 to  20200106\
+A2C Sharpe Ratio:  0.08844098035288728\
+======PPO Training========\
+Training time (PPO):  6.931035645802816  minutes\
+======PPO Validation from:  20191004 to  20200106\
+PPO Sharpe Ratio:  -0.24443030867629398\
+======DDPG Training========\
+Training time (DDPG):  1.222004783153534  minutes\
+======DDPG Validation from:  20191004 to  20200106\
+DDPG Sharpe Ratio:  -0.4238433539501703\
+======TD3 Training========\
+Training time (TD3):  1.4237258354822795  minutes\
+======TD3 Validation from:  20191004 to  20200106\
+TD3 Sharpe Ratio:  -0.17709692397999507\
+======GAIL Training========\
+actions (27070, 30)\
+obs (27070, 181)\
+rewards (27070,)\
+episode_returns (10,)\
+episode_starts (27070,)\
+actions (27070, 30)\
+obs (27070, 181)\
+rewards (27070,)\
+episode_returns (10,)\
+episode_starts (27070,)\
+Total trajectories: 10\
+Total transitions: 27070\
+Average returns: 236.3276581786049\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.374 seconds\
+computegrad\
+done in 0.215 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       1.25          0\
+         1      0.774     0.0866\
+         2       6.09      0.288\
+         3       1.11      0.399\
+         4       2.06      0.502\
+         5       17.5       1.22\
+         6      0.574       1.61\
+         7       2.56       1.98\
+         8       0.69       2.97\
+         9      0.759        3.6\
+        10       11.3       4.74\
+done in 0.425 seconds\
+Expected: 0.218 Actual: 0.117\
+Stepsize OK!\
+vf\
+done in 0.150 seconds\
+sampling\
+done in 4.224 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       5.59          0\
+         1       7.19    0.00175\
+         2       50.8     0.0579\
+         3       17.4      0.126\
+         4       9.33      0.281\
+         5       54.1      0.663\
+         6        537      0.828\
+         7       52.6       1.41\
+         8        105       2.85\
+         9       31.1       3.71\
+        10        225        3.9\
+done in 0.050 seconds\
+Expected: 0.332 Actual: 0.057\
+violated KL constraint. shrinking step.\
+Expected: 0.332 Actual: 0.034\
+Stepsize OK!\
+vf\
+done in 0.064 seconds\
+sampling\
+done in 4.646 seconds\
+computegrad\
+done in 0.011 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       3.61          0\
+         1       6.91     0.0271\
+         2       3.97      0.134\
+         3       10.6       0.32\
+         4       15.2      0.832\
+         5       22.1       1.41\
+         6       15.9       1.96\
+         7       42.4       2.76\
+         8       30.8        7.1\
+         9       38.3       7.45\
+        10       15.5       8.13\
+done in 0.069 seconds\
+Expected: 0.418 Actual: 0.113\
+Stepsize OK!\
+vf\
+done in 0.087 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.59350 |       0.59816 |       0.64233 |      -0.00064 |       0.69434 |       0.71191\
+-----------------------------------------\
+| EpLenMean               | 2.71e+03    |\
+| EpRewMean               | 1872.2222   |\
+| EpThisIter              | 1           |\
+| EpTrueRewMean           | 117         |\
+| EpisodesSoFar           | 1           |\
+| TimeElapsed             | 15          |\
+| TimestepsSoFar          | 1024        |\
+| entloss                 | 0.0         |\
+| entropy                 | 42.557167   |\
+| explained_variance_t... | -0.0695     |\
+| meankl                  | 0.013811933 |\
+| optimgain               | 0.11281119  |\
+| reference_Q_mean        | 3.74        |\
+| reference_Q_std         | 2.66        |\
+| reference_action_mean   | 0.199       |\
+| reference_action_std    | 0.961       |\
+| reference_actor_Q_mean  | 4.65        |\
+| reference_actor_Q_std   | 2.87        |\
+| rollout/Q_mean          | 2.14        |\
+| rollout/actions_mean    | -0.0417     |\
+| rollout/actions_std     | 0.801       |\
+| rollout/episode_steps   | 2.71e+03    |\
+| rollout/episodes        | 3           |\
+| rollout/return          | 139         |\
+| rollout/return_history  | 139         |\
+| surrgain                | 0.11281119  |\
+| total/duration          | 72.3        |\
+| total/episodes          | 3           |\
+| total/epochs            | 1           |\
+| total/steps             | 9998        |\
+| total/steps_per_second  | 138         |\
+| train/loss_actor        | -4.41       |\
+| train/loss_critic       | 1.57        |\
+| train/param_noise_di... | 0           |\
+-----------------------------------------\
+Training time (GAIL):  1.7577353636423747  minutes\
+======GAIL Validation from:  20191004 to  20200106\
+GAIL Sharpe Ratio:  0.08571245051705237\
+======Trading from:  20200106 to  20200406\
+Used Model:  <stable_baselines.a2c.a2c.A2C object at 0x144d97240>\
+previous_total_asset:1582406.8128560304\
+end_total_asset:1569410.4026577463\
+total_reward:-12996.41019828408\
+total_cost:  812.161889594863\
+total trades:  161\
+Sharpe:  -0.42609326864494057\
+============================================\
+turbulence_threshold:  96.08032158358223\
+======Model training from:  20090000 to  20200106\
+======A2C Training========\
+Training time (A2C):  1.9519223968187969  minutes\
+======A2C Validation from:  20200106 to  20200406\
+A2C Sharpe Ratio:  -0.4837978605416295\
+======PPO Training========\
+Training time (PPO):  7.02433223327001  minutes\
+======PPO Validation from:  20200106 to  20200406\
+PPO Sharpe Ratio:  -0.4181704582620764\
+======DDPG Training========\
+Training time (DDPG):  1.2421825528144836  minutes\
+======DDPG Validation from:  20200106 to  20200406\
+DDPG Sharpe Ratio:  -0.4305275466572475\
+======TD3 Training========\
+Training time (TD3):  1.4119984348615011  minutes\
+======TD3 Validation from:  20200106 to  20200406\
+TD3 Sharpe Ratio:  -0.4253800843487734\
+======GAIL Training========\
+actions (27700, 30)\
+obs (27700, 181)\
+rewards (27700,)\
+episode_returns (10,)\
+episode_starts (27700,)\
+actions (27700, 30)\
+obs (27700, 181)\
+rewards (27700,)\
+episode_returns (10,)\
+episode_starts (27700,)\
+Total trajectories: 10\
+Total transitions: 27700\
+Average returns: 209.90404475451214\
+Std for returns: 0.0\
+********** Iteration 0 ************\
+Optimizing Policy...\
+sampling\
+done in 4.565 seconds\
+computegrad\
+done in 0.242 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       2.72          0\
+         1       3.27     0.0121\
+         2      0.421     0.0748\
+         3       8.56      0.112\
+         4      0.444       0.42\
+         5      0.794       1.04\
+         6       0.51       1.18\
+         7       27.1        1.9\
+         8      0.835       2.23\
+         9      0.671        2.4\
+        10       1.05       2.42\
+done in 0.484 seconds\
+Expected: 0.151 Actual: 0.093\
+Stepsize OK!\
+vf\
+done in 0.172 seconds\
+sampling\
+done in 4.422 seconds\
+computegrad\
+done in 0.010 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0       7.46          0\
+         1       9.12   0.000671\
+         2       7.48    0.00107\
+         3       14.5      0.227\
+         4       10.8      0.398\
+         5        261      0.407\
+         6        602       1.27\
+         7       57.3       1.38\
+         8       43.4       2.94\
+         9       45.7       2.95\
+        10       41.8        4.1\
+done in 0.056 seconds\
+Expected: 0.336 Actual: 0.077\
+Stepsize OK!\
+vf\
+done in 0.074 seconds\
+sampling\
+done in 4.663 seconds\
+computegrad\
+done in 0.009 seconds\
+conjugate_gradient\
+      iter residual norm  soln norm\
+         0         17          0\
+         1         45   0.000553\
+         2        251      0.839\
+         3        111       1.62\
+         4        586       1.62\
+         5       15.8       4.09\
+         6        174        4.2\
+         7       3.02        4.2\
+         8       8.67       4.58\
+         9   1.37e+03       4.61\
+        10         12       4.87\
+done in 0.055 seconds\
+Expected: 0.565 Actual: 0.020\
+Stepsize OK!\
+vf\
+done in 0.073 seconds\
+Optimizing Discriminator...\
+generator_loss |   expert_loss |       entropy |  entropy_loss | generator_acc |    expert_acc\
+      0.66982 |       0.69980 |       0.62118 |      -0.00062 |       0.60840 |       0.58691\
+------------------------------------------\
+| EpLenMean               | 2.77e+03     |\
+| EpRewMean               | 1200.8977    |\
+| EpThisIter              | 1            |\
+| EpTrueRewMean           | 170          |\
+| EpisodesSoFar           | 1            |\
+| TimeElapsed             | 15.5         |\
+| TimestepsSoFar          | 1024         |\
+| entloss                 | 0.0          |\
+| entropy                 | 42.573914    |\
+| explained_variance_t... | -0.0318      |\
+| meankl                  | 0.0083864555 |\
+| optimgain               | 0.020237576  |\
+| reference_Q_mean        | 5.61         |\
+| reference_Q_std         | 3.39         |\
+| reference_action_mean   | -0.11        |\
+| reference_action_std    | 0.949        |\
+| reference_actor_Q_mean  | 6.76         |\
+| reference_actor_Q_std   | 3.59         |\
+| rollout/Q_mean          | 3.15         |\
+| rollout/actions_mean    | 0.0304       |\
+| rollout/actions_std     | 0.801        |\
+| rollout/episode_steps   | 2.77e+03     |\
+| rollout/episodes        | 3            |\
+| rollout/return          | 211          |\
+| rollout/return_history  | 211          |\
+| surrgain                | 0.020237576  |\
+| total/duration          | 73.6         |\
+| total/episodes          | 3            |\
+| total/epochs            | 1            |\
+| total/steps             | 9998         |\
+| total/steps_per_second  | 136          |\
+| train/loss_actor        | -5.97        |\
+| train/loss_critic       | 2.06         |\
+| train/param_noise_di... | 0            |\
+------------------------------------------\
+Training time (GAIL):  1.770997150739034  minutes\
+======GAIL Validation from:  20200106 to  20200406\
+GAIL Sharpe Ratio:  -0.41587809234481055\
+======Trading from:  20200406 to  20200707\
+Used Model:  <stable_baselines.gail.model.GAIL object at 0x143d4c128>\
+previous_total_asset:1569410.4026577463\
+end_total_asset:1572875.1819640978\
+total_reward:3464.77930635144\
+total_cost:  509.93239984037393\
+total trades:  132\
+Sharpe:  0.23737025657210392\
+Ensemble Strategy took:  231.6753569483757  minutes}
